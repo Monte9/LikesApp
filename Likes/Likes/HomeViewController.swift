@@ -1,3 +1,4 @@
+
 //
 //  HomeViewController.swift
 //  Likes
@@ -16,10 +17,12 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var cardsView: DraggableImageView!
     
-    var categories: [String] = ["bernie",
-                                "mars", "modelX", "yosemite"]
+    var cards: [Card] = []
     
-    var categoryAnswers = [String: Int]()
+    let dict = ["ImageName" : "bernie", "Caption": "Do you #FeelTheBern?"]
+    let dict2 = ["ImageName" : "mars", "Caption": "Do you want to live on Mars?"]
+    let dict3 = ["ImageName" : "modelX", "Caption": "Is this the car of the future?"]
+    let dict4 = ["ImageName" : "yosemite", "Caption": "Have you been to Yosemite?"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,27 +32,36 @@ class HomeViewController: UIViewController {
         self.navigationItem.titleView = UIImageView(image: logoImage)
         
         resultsLabel.hidden = true
-        
-        cardsView.profileImage = UIImage(named: categories[0])
-        cardsView.about = "Do you like \(categories[0])?"
 
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(HomeViewController.showNewUser), name: userDidAnswer, object: nil)
+        
+        let bernieCard = Card.init(dictionary: dict)
+        self.cards.append(bernieCard)
+        
+        let marsCard = Card.init(dictionary: dict2)
+        self.cards.append(marsCard)
+        
+        let modelXCard = Card.init(dictionary: dict3)
+        self.cards.append(modelXCard)
+        
+        let yosemiteCard = Card.init(dictionary: dict4)
+        self.cards.append(yosemiteCard)
+        
+        cardsView.setCard(cards.first)
+                
+        print("Number of cards: \(cards.count)")
     }
     
     func showNewUser() {
         
-        if cardsView.answerYes == true && i < 4  {
-            cardsView.profileImage = UIImage(named: categories[i])
-            cardsView.about = "Do you like \(categories[i])?"
-            categoryAnswers[categories[i]] = 1
+        if cardsView.currentCard?.liked == true && i < 4  {
+            cardsView.setCard(cards[i])
             cardsView.numberYes = cardsView.numberYes + 1
         } else if i < 4 {
-            cardsView.profileImage = UIImage(named: categories[i])
-            cardsView.about = "Do you like \(categories[i])?"
-            categoryAnswers[categories[i]] = 0
+            cardsView.setCard(cards[i])
             cardsView.numberNo = cardsView.numberNo + 1
         } else if i == 4 {
-            if cardsView.answerYes == true {
+            if cardsView.currentCard?.liked == true {
                 cardsView.numberYes = cardsView.numberYes + 1
             } else {
                 cardsView.numberNo = cardsView.numberNo + 1
@@ -59,9 +71,7 @@ class HomeViewController: UIViewController {
             cardsView.hidden = true
             i = -1
         }
-        
         i += 1
-
     }
 
     override func didReceiveMemoryWarning() {
@@ -75,12 +85,9 @@ class HomeViewController: UIViewController {
         cardsView.hidden = false
         cardsView.numberYes = 0
         cardsView.numberNo = 0
-//        cardsView.profileImage = UIImage(named: categories[0])
-//        cardsView.about = "Do you like \(categories[0])?"
     }
-    
-    
 
+    
     /*
     // MARK: - Navigation
 

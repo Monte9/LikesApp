@@ -24,9 +24,11 @@ class DraggableImageView: UIView {
     var prevTranslationValue: CGFloat? = 0
     
     //determine the answer
-    var answerYes: Bool?
+  //  var answerYes: Bool?
     var numberYes = 0
     var numberNo = 0
+    
+    var currentCard: Card?
     
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)!
@@ -62,6 +64,12 @@ class DraggableImageView: UIView {
     var profileImage: UIImage? {
         get { return profileImageView.image }
         set { profileImageView.image = newValue }
+    }
+    
+    func setCard(card: Card?) {
+        currentCard = card
+        profileImageView.image = UIImage(named: (card?.imageName)!)
+        aboutLabel.text = card?.caption
     }
     
     //method that rotates and pans the image
@@ -110,7 +118,9 @@ class DraggableImageView: UIView {
             if translation.x > 150 {
                 self.contentView.center.x += self.bounds.width
                 
-                answerYes = true
+                currentCard?.liked = true
+                
+                //answerYes = true
                 
                 NSNotificationCenter.defaultCenter().postNotificationName(userDidAnswer, object: nil);
                 
@@ -124,7 +134,9 @@ class DraggableImageView: UIView {
             } else if translation.x < -150 {
                 self.contentView.center.x -= self.bounds.width
                 
-                answerYes = false
+            //    answerYes = false
+                
+                currentCard?.liked = false
                 
                 NSNotificationCenter.defaultCenter().postNotificationName(userDidAnswer, object: nil);
                 
