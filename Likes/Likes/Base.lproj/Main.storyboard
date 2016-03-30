@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="DxG-6E-i6y">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="Likes" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3Bg-KW-IgN"/>
+                        <viewControllerLayoutGuide type="bottom" id="T91-tV-f4E"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RESULTS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ymW-fq-eyV">
+                                <rect key="frame" x="16" y="269" width="288" height="30"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="db5-AQ-bFg" customClass="DraggableImageView" customModule="Likes" customModuleProvider="target">
+                                <rect key="frame" x="8" y="72" width="304" height="356"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="304" id="0qN-2p-W22"/>
+                                    <constraint firstAttribute="height" constant="356" id="tLo-Rz-sta"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="sTS-zX-l8T" appends="YES" id="xz9-w8-4Gj"/>
+                                </connections>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="action_buttons" translatesAutoresizingMaskIntoConstraints="NO" id="fMk-Jv-RpU">
+                                <rect key="frame" x="0.0" y="440" width="320" height="108"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="4Fw-iG-Wh4"/>
+                                    <constraint firstAttribute="height" constant="108" id="REs-Sd-iG7"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="db5-AQ-bFg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1f2-lo-C8p"/>
+                            <constraint firstItem="ymW-fq-eyV" firstAttribute="top" secondItem="3Bg-KW-IgN" secondAttribute="bottom" constant="205" id="8al-hj-JmF"/>
+                            <constraint firstItem="ymW-fq-eyV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8ao-2n-hlJ"/>
+                            <constraint firstItem="fMk-Jv-RpU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="F2j-IO-UpJ"/>
+                            <constraint firstItem="ymW-fq-eyV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="FKj-dZ-aEM"/>
+                            <constraint firstAttribute="trailing" secondItem="ymW-fq-eyV" secondAttribute="trailing" constant="16" id="dXW-TE-n3e"/>
+                            <constraint firstItem="fMk-Jv-RpU" firstAttribute="top" secondItem="db5-AQ-bFg" secondAttribute="bottom" constant="12" id="sG8-As-fts"/>
+                            <constraint firstItem="db5-AQ-bFg" firstAttribute="top" secondItem="3Bg-KW-IgN" secondAttribute="bottom" constant="8" id="tXb-7F-Pwo"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="hQL-MB-i1A">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="settings" id="bmt-Ig-Pdq"/>
+                        <barButtonItem key="rightBarButtonItem" image="ape" id="6MX-q6-ENV">
+                            <connections>
+                                <action selector="goGoGorilla:" destination="BYZ-38-t0r" id="qdc-7y-In7"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="cardsView" destination="db5-AQ-bFg" id="cZY-VK-hYE"/>
+                        <outlet property="resultsLabel" destination="ymW-fq-eyV" id="Xuw-vn-RXz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="sTS-zX-l8T">
+                    <connections>
+                        <action selector="onImagePanGesture:" destination="db5-AQ-bFg" id="UwV-1S-NDv"/>
+                        <outlet property="delegate" destination="db5-AQ-bFg" id="COX-Fp-1Jm"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="662" y="331"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4rA-xk-J49">
+            <objects>
+                <navigationController storyboardIdentifier="HomeNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="DxG-6E-i6y" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bDz-xh-8MI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="KZu-8p-yAa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vA6-5t-KnI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130" y="331"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="action_buttons" width="320" height="108"/>
+        <image name="ape" width="24" height="24"/>
+        <image name="settings" width="24" height="24"/>
+    </resources>
+    <color key="tintColor" red="1" green="0.68075183996287891" blue="0.36352924475208004" alpha="1" colorSpace="calibratedRGB"/>
+</document>
