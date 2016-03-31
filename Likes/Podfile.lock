@@ -1,0 +1,13 @@
+PODS:
+  - RESideMenu (4.0.7)
+  - UIColor_Hex_Swift (2.1)
+
+DEPENDENCIES:
+  - RESideMenu (~> 4.0.7)
+  - UIColor_Hex_Swift (~> 2.1)
+
+SPEC CHECKSUMS:
+  RESideMenu: f24c508404b49c667344c54aba7e590883533958
+  UIColor_Hex_Swift: e91dc51f6bf252ec7bf74c8704ceedeeb7640c1c
+
+COCOAPODS: 0.39.0

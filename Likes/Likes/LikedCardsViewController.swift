@@ -10,8 +10,6 @@ import UIKit
 
 class LikedCardsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    
-    
     @IBOutlet weak var tableView: UITableView!
     
     var likedCards: [Card] = []
@@ -23,13 +21,9 @@ class LikedCardsViewController: UIViewController, UITableViewDataSource, UITable
         self.tableView.delegate = self
         self.tableView.dataSource = self
         
-        //setup the logo for titleView in the navigation bar
-        let logoImage = UIImage(named: "logo")
         self.navigationItem.title = "Liked Cards"
-            
-       var font = UIFont(name: "Menlo-Bold", size: 22.0)! ?? UIFont.systemFontOfSize(18.0)
-        
-        self.navigationController?.navigationBar.titleTextAttributes = [NSFontAttributeName: font, NSForegroundColorAttributeName:UIColor.orangeColor()]
+        let font = UIFont(name: "Menlo-Bold", size: 22.0)! ?? UIFont.systemFontOfSize(18.0)
+        self.navigationController?.navigationBar.titleTextAttributes = [NSFontAttributeName: font, NSForegroundColorAttributeName: UIColor(rgba: "#FFAE5D")]
 
         // let barbuttonFont = UIFont(name: "Ubuntu-Light", size: 15) ?? UIFont.systemFontOfSize(15)
         //UIBarButtonItem.appearance().setTitleTextAttributes([NSFontAttributeName: barbuttonFont, NSForegroundColorAttributeName:UIColor.whiteColor()], forState: UIControlState.Normal)
@@ -52,21 +46,7 @@ class LikedCardsViewController: UIViewController, UITableViewDataSource, UITable
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    struct FontHelper {
-        static func defaultRegularFontWithSize(size: CGFloat) -> UIFont {
-            return UIFont(name: "SourceSansPro-Regular", size: size)!
-        }
-        
-        static func defaultLightFontWithSize(size: CGFloat) -> UIFont {
-            return UIFont(name: "SourceSansPro-Light", size: size)!
-        }
-        
-        static func defaultSemiBoldFontWithSize(size: CGFloat) -> UIFont {
-            return UIFont(name: "SourceSansPro-Semibold", size: size)!
-        }
-    }
-    
+  
     /*
     // MARK: - Navigation
 

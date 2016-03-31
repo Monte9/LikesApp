@@ -1,15 +1,52 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="DxG-6E-i6y">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="gdZ-iK-Y42">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--New Left Menu View Controller-->
+        <scene sceneID="ZiZ-D3-Aaz">
+            <objects>
+                <viewController restorationIdentifier="leftMenuViewController" storyboardIdentifier="leftMenuViewController" id="x5c-oM-Wok" customClass="NewLeftMenuViewController" customModule="Likes" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zlr-q9-q8A"/>
+                        <viewControllerLayoutGuide type="bottom" id="k77-4U-nJU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nyM-DW-VW3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="y1K-2o-mSf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BEB-s2-j8J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="261" y="-356"/>
+        </scene>
+        <!--Root View Controller-->
+        <scene sceneID="wPF-mV-ycf">
+            <objects>
+                <viewController id="gdZ-iK-Y42" customClass="DEMORootViewController" customModule="Likes" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ISe-jg-LLn"/>
+                        <viewControllerLayoutGuide type="bottom" id="bpB-na-WnX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="H46-01-PTZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z4c-fc-Cd3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="727" y="-351"/>
+        </scene>
         <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="Likes" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="BYZ-38-t0r" customClass="HomeViewController" customModule="Likes" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3Bg-KW-IgN"/>
                         <viewControllerLayoutGuide type="bottom" id="T91-tV-f4E"/>
@@ -85,7 +122,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="hQL-MB-i1A">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="settings" id="bmt-Ig-Pdq"/>
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="settings" id="bmt-Ig-Pdq">
+                            <connections>
+                                <action selector="settingsClicked:" destination="BYZ-38-t0r" id="Tu0-hZ-qxg"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="fav" id="6MX-q6-ENV">
                             <connections>
                                 <segue destination="066-ws-npZ" kind="push" id="vFt-SI-7YD"/>
@@ -181,7 +222,7 @@
         <!--Navigation Controller-->
         <scene sceneID="4rA-xk-J49">
             <objects>
-                <navigationController storyboardIdentifier="HomeNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="DxG-6E-i6y" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="contentViewController" automaticallyAdjustsScrollViewInsets="NO" id="DxG-6E-i6y" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="bDz-xh-8MI">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -204,5 +245,5 @@
         <image name="redo" width="48" height="48"/>
         <image name="settings" width="24" height="24"/>
     </resources>
-    <color key="tintColor" red="1" green="0.68075183996287891" blue="0.36352924475208004" alpha="1" colorSpace="calibratedRGB"/>
+    <color key="tintColor" red="1" green="0.68235294117647061" blue="0.36470588235294116" alpha="1" colorSpace="calibratedRGB"/>
 </document>

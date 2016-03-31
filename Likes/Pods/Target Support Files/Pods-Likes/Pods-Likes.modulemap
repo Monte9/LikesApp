@@ -1,0 +1,6 @@
+framework module Pods_Likes {
+  umbrella header "Pods-Likes-umbrella.h"
+
+  export *
+  module * { export * }
+}

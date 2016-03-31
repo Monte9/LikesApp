@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12AB26D30CB60B836B6654BC /* Pods_Likes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E72EBAF78DCEE1E6DCE64359 /* Pods_Likes.framework */; };
 		FADE1E681CABFEDD0041EF9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADE1E671CABFEDD0041EF9F /* AppDelegate.swift */; };
 		FADE1E6D1CABFEDD0041EF9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADE1E6B1CABFEDD0041EF9F /* Main.storyboard */; };
 		FADE1E6F1CABFEDD0041EF9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADE1E6E1CABFEDD0041EF9F /* Assets.xcassets */; };
@@ -17,9 +18,14 @@
 		FADE1E841CAC84EF0041EF9F /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADE1E831CAC84EF0041EF9F /* Card.swift */; };
 		FADE1E861CAC91200041EF9F /* LikedCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADE1E851CAC91200041EF9F /* LikedCardsViewController.swift */; };
 		FADE1E881CAC91560041EF9F /* LikedCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADE1E871CAC91560041EF9F /* LikedCardTableViewCell.swift */; };
+		FADE1E8A1CADB0640041EF9F /* DEMORootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADE1E891CADB0640041EF9F /* DEMORootViewController.swift */; };
+		FADE1E8E1CADBD700041EF9F /* NewLeftMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADE1E8D1CADBD700041EF9F /* NewLeftMenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		156870A5B38E7115899547A9 /* Pods-Likes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Likes.release.xcconfig"; path = "Pods/Target Support Files/Pods-Likes/Pods-Likes.release.xcconfig"; sourceTree = "<group>"; };
+		E72EBAF78DCEE1E6DCE64359 /* Pods_Likes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Likes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E804E599A4C7D197B8DBFF02 /* Pods-Likes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Likes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Likes/Pods-Likes.debug.xcconfig"; sourceTree = "<group>"; };
 		FADE1E641CABFEDD0041EF9F /* Likes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Likes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FADE1E671CABFEDD0041EF9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FADE1E6C1CABFEDD0041EF9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -32,6 +38,8 @@
 		FADE1E831CAC84EF0041EF9F /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		FADE1E851CAC91200041EF9F /* LikedCardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikedCardsViewController.swift; sourceTree = "<group>"; };
 		FADE1E871CAC91560041EF9F /* LikedCardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikedCardTableViewCell.swift; sourceTree = "<group>"; };
+		FADE1E891CADB0640041EF9F /* DEMORootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DEMORootViewController.swift; sourceTree = "<group>"; };
+		FADE1E8D1CADBD700041EF9F /* NewLeftMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewLeftMenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,17 +47,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12AB26D30CB60B836B6654BC /* Pods_Likes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F1136904BF0BA2357AF3F0F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E72EBAF78DCEE1E6DCE64359 /* Pods_Likes.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F0017C286B92F47E17278ABC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E804E599A4C7D197B8DBFF02 /* Pods-Likes.debug.xcconfig */,
+				156870A5B38E7115899547A9 /* Pods-Likes.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FADE1E5B1CABFEDD0041EF9F = {
 			isa = PBXGroup;
 			children = (
 				FADE1E661CABFEDD0041EF9F /* Likes */,
 				FADE1E651CABFEDD0041EF9F /* Products */,
+				F0017C286B92F47E17278ABC /* Pods */,
+				1F1136904BF0BA2357AF3F0F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,18 +93,44 @@
 			isa = PBXGroup;
 			children = (
 				FADE1E671CABFEDD0041EF9F /* AppDelegate.swift */,
-				FADE1E791CAC40690041EF9F /* HomeViewController.swift */,
-				FADE1E831CAC84EF0041EF9F /* Card.swift */,
-				FADE1E811CAC515F0041EF9F /* DraggableImageView.swift */,
-				FADE1E7F1CAC513A0041EF9F /* DraggableImageView.xib */,
-				FADE1E871CAC91560041EF9F /* LikedCardTableViewCell.swift */,
-				FADE1E851CAC91200041EF9F /* LikedCardsViewController.swift */,
+				FADE1E911CADDAF50041EF9F /* Views */,
+				FADE1E901CADDAE30041EF9F /* Model */,
+				FADE1E8F1CADDACA0041EF9F /* View Controllers */,
 				FADE1E6B1CABFEDD0041EF9F /* Main.storyboard */,
 				FADE1E6E1CABFEDD0041EF9F /* Assets.xcassets */,
 				FADE1E701CABFEDD0041EF9F /* LaunchScreen.storyboard */,
 				FADE1E731CABFEDD0041EF9F /* Info.plist */,
 			);
 			path = Likes;
+			sourceTree = "<group>";
+		};
+		FADE1E8F1CADDACA0041EF9F /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FADE1E791CAC40690041EF9F /* HomeViewController.swift */,
+				FADE1E851CAC91200041EF9F /* LikedCardsViewController.swift */,
+				FADE1E891CADB0640041EF9F /* DEMORootViewController.swift */,
+				FADE1E8D1CADBD700041EF9F /* NewLeftMenuViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		FADE1E901CADDAE30041EF9F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FADE1E831CAC84EF0041EF9F /* Card.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		FADE1E911CADDAF50041EF9F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FADE1E871CAC91560041EF9F /* LikedCardTableViewCell.swift */,
+				FADE1E811CAC515F0041EF9F /* DraggableImageView.swift */,
+				FADE1E7F1CAC513A0041EF9F /* DraggableImageView.xib */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,9 +140,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FADE1E761CABFEDD0041EF9F /* Build configuration list for PBXNativeTarget "Likes" */;
 			buildPhases = (
+				23BFDE45899ADB360E74177B /* Check Pods Manifest.lock */,
 				FADE1E601CABFEDD0041EF9F /* Sources */,
 				FADE1E611CABFEDD0041EF9F /* Frameworks */,
 				FADE1E621CABFEDD0041EF9F /* Resources */,
+				C2CB23993A8BF95F823D9D4B /* Embed Pods Frameworks */,
+				56EAAD06E71CC44F06EB30A5 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -146,17 +203,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		23BFDE45899ADB360E74177B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		56EAAD06E71CC44F06EB30A5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Likes/Pods-Likes-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2CB23993A8BF95F823D9D4B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Likes/Pods-Likes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FADE1E601CABFEDD0041EF9F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				FADE1E681CABFEDD0041EF9F /* AppDelegate.swift in Sources */,
+				FADE1E8A1CADB0640041EF9F /* DEMORootViewController.swift in Sources */,
 				FADE1E821CAC515F0041EF9F /* DraggableImageView.swift in Sources */,
 				FADE1E7A1CAC40690041EF9F /* HomeViewController.swift in Sources */,
 				FADE1E841CAC84EF0041EF9F /* Card.swift in Sources */,
 				FADE1E861CAC91200041EF9F /* LikedCardsViewController.swift in Sources */,
 				FADE1E881CAC91560041EF9F /* LikedCardTableViewCell.swift in Sources */,
+				FADE1E8E1CADBD700041EF9F /* NewLeftMenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +374,7 @@
 		};
 		FADE1E771CABFEDD0041EF9F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E804E599A4C7D197B8DBFF02 /* Pods-Likes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Likes/Info.plist;
@@ -278,6 +386,7 @@
 		};
 		FADE1E781CABFEDD0041EF9F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 156870A5B38E7115899547A9 /* Pods-Likes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Likes/Info.plist;

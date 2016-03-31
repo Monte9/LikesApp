@@ -8,6 +8,7 @@
 //
 
 import UIKit
+import RESideMenu
 
 var i = 1
 
@@ -57,8 +58,7 @@ class HomeViewController: UIViewController {
         self.cards.append(yosemiteCard)
         
         cardsView.setCard(cards.first)
-                
-        print("Number of cards: \(cards.count)")
+        
     }
     
     func showNewUser() {
@@ -127,6 +127,10 @@ class HomeViewController: UIViewController {
             cardsView.numberNo = cardsView.numberNo + 1
         }
         i += 1
+    }
+    
+    @IBAction func settingsClicked(sender: AnyObject) {
+        self.presentLeftMenuViewController(self)
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
