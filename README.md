@@ -19,6 +19,14 @@ The following features are implemented:
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
+## 3rd Party Libraries
+
+1. [UIColor-Hex-Swift](https://github.com/yeahdongcn/UIColor-Hex-Swift): Convenience methods for creating color using RGBA hex string.
+    `pod 'UIColor_Hex_Swift', '~> 2.1'`
+
+2. [RESideMenu](https://github.com/romaonthego/RESideMenu): iOS 7/8 style side menu with parallax effect.
+    `pod 'RESideMenu', '~> 4.0.7'`
+
 ## Notes
 
 Simple. Intiutive. Fun. #likesApp
