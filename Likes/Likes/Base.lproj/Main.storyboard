@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Home View Controller-->
@@ -34,36 +35,67 @@
                                     <outletCollection property="gestureRecognizers" destination="sTS-zX-l8T" appends="YES" id="xz9-w8-4Gj"/>
                                 </connections>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="action_buttons" translatesAutoresizingMaskIntoConstraints="NO" id="fMk-Jv-RpU">
-                                <rect key="frame" x="0.0" y="440" width="320" height="108"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ipF-Qw-9ll">
+                                <rect key="frame" x="204" y="436" width="100" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="320" id="4Fw-iG-Wh4"/>
-                                    <constraint firstAttribute="height" constant="108" id="REs-Sd-iG7"/>
+                                    <constraint firstAttribute="width" constant="100" id="bQJ-9a-5ea"/>
+                                    <constraint firstAttribute="height" constant="100" id="jxZ-I4-gLi"/>
                                 </constraints>
-                            </imageView>
+                                <state key="normal" image="like"/>
+                                <connections>
+                                    <action selector="cardLiked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UDY-HI-ayp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xdb-LW-IGl">
+                                <rect key="frame" x="130" y="468" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="0wR-Un-chf"/>
+                                    <constraint firstAttribute="height" constant="60" id="nm7-m9-w23"/>
+                                </constraints>
+                                <state key="normal" image="redo"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="owK-VM-e2Y">
+                                <rect key="frame" x="20" y="460" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="HdU-uX-Hv1"/>
+                                    <constraint firstAttribute="width" constant="100" id="eCJ-xM-BJk"/>
+                                </constraints>
+                                <state key="normal" image="dislike"/>
+                                <connections>
+                                    <action selector="cardDisliked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CMf-as-TtU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="db5-AQ-bFg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1f2-lo-C8p"/>
                             <constraint firstItem="ymW-fq-eyV" firstAttribute="top" secondItem="3Bg-KW-IgN" secondAttribute="bottom" constant="205" id="8al-hj-JmF"/>
                             <constraint firstItem="ymW-fq-eyV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8ao-2n-hlJ"/>
-                            <constraint firstItem="fMk-Jv-RpU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="F2j-IO-UpJ"/>
                             <constraint firstItem="ymW-fq-eyV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="FKj-dZ-aEM"/>
+                            <constraint firstItem="xdb-LW-IGl" firstAttribute="centerY" secondItem="owK-VM-e2Y" secondAttribute="centerY" constant="-12" id="O9F-Q6-zU8"/>
+                            <constraint firstItem="xdb-LW-IGl" firstAttribute="leading" secondItem="owK-VM-e2Y" secondAttribute="trailing" constant="10" id="P1N-9U-4jp"/>
+                            <constraint firstItem="ipF-Qw-9ll" firstAttribute="top" secondItem="db5-AQ-bFg" secondAttribute="bottom" constant="8" id="QdJ-op-bOQ"/>
+                            <constraint firstItem="owK-VM-e2Y" firstAttribute="top" secondItem="db5-AQ-bFg" secondAttribute="bottom" constant="32" id="Wcy-2r-y3o"/>
                             <constraint firstAttribute="trailing" secondItem="ymW-fq-eyV" secondAttribute="trailing" constant="16" id="dXW-TE-n3e"/>
-                            <constraint firstItem="fMk-Jv-RpU" firstAttribute="top" secondItem="db5-AQ-bFg" secondAttribute="bottom" constant="12" id="sG8-As-fts"/>
+                            <constraint firstItem="xdb-LW-IGl" firstAttribute="top" secondItem="db5-AQ-bFg" secondAttribute="bottom" constant="40" id="eCi-Og-Cr6"/>
+                            <constraint firstItem="ipF-Qw-9ll" firstAttribute="leading" secondItem="xdb-LW-IGl" secondAttribute="trailing" constant="14" id="gD3-kB-4A1"/>
+                            <constraint firstItem="ipF-Qw-9ll" firstAttribute="centerY" secondItem="owK-VM-e2Y" secondAttribute="centerY" constant="-24" id="hVz-Df-d6N"/>
+                            <constraint firstItem="xdb-LW-IGl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mMa-WK-wlw"/>
                             <constraint firstItem="db5-AQ-bFg" firstAttribute="top" secondItem="3Bg-KW-IgN" secondAttribute="bottom" constant="8" id="tXb-7F-Pwo"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="hQL-MB-i1A">
                         <barButtonItem key="leftBarButtonItem" title="Item" image="settings" id="bmt-Ig-Pdq"/>
-                        <barButtonItem key="rightBarButtonItem" image="ape" id="6MX-q6-ENV">
+                        <barButtonItem key="rightBarButtonItem" image="fav" id="6MX-q6-ENV">
                             <connections>
-                                <action selector="goGoGorilla:" destination="BYZ-38-t0r" id="qdc-7y-In7"/>
+                                <segue destination="066-ws-npZ" kind="push" id="vFt-SI-7YD"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="cardsView" destination="db5-AQ-bFg" id="cZY-VK-hYE"/>
+                        <outlet property="dislikeButton" destination="owK-VM-e2Y" id="Gac-Yg-Dg8"/>
+                        <outlet property="likeButton" destination="ipF-Qw-9ll" id="501-zU-22F"/>
                         <outlet property="resultsLabel" destination="ymW-fq-eyV" id="Xuw-vn-RXz"/>
                     </connections>
                 </viewController>
@@ -76,6 +108,75 @@
                 </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="662" y="331"/>
+        </scene>
+        <!--Liked Cards View Controller-->
+        <scene sceneID="Ui6-8k-tOn">
+            <objects>
+                <viewController id="066-ws-npZ" customClass="LikedCardsViewController" customModule="Likes" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dcS-Xt-ovA"/>
+                        <viewControllerLayoutGuide type="bottom" id="DBb-CR-gOF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jLc-7q-E5q">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="79" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="atD-pz-0br">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LikedCardCell" rowHeight="79" id="owh-El-o0o" customClass="LikedCardTableViewCell" customModule="Likes" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="92" width="320" height="79"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="owh-El-o0o" id="Z4y-9v-ViQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="78"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Cr1-6G-ddS">
+                                                    <rect key="frame" x="8" y="8" width="60" height="60"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="60" id="gGs-0J-xHj"/>
+                                                        <constraint firstAttribute="height" constant="60" id="zGg-ar-KhL"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" text="Caption" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oDM-HO-dGx">
+                                                    <rect key="frame" x="76" y="27" width="236" height="21"/>
+                                                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="18"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="oDM-HO-dGx" secondAttribute="trailing" constant="8" id="7PB-sl-WaP"/>
+                                                <constraint firstItem="oDM-HO-dGx" firstAttribute="top" secondItem="Z4y-9v-ViQ" secondAttribute="top" constant="27" id="UgF-4R-UUm"/>
+                                                <constraint firstItem="Cr1-6G-ddS" firstAttribute="top" secondItem="Z4y-9v-ViQ" secondAttribute="topMargin" id="eer-81-G6o"/>
+                                                <constraint firstItem="Cr1-6G-ddS" firstAttribute="leading" secondItem="Z4y-9v-ViQ" secondAttribute="leadingMargin" id="hHG-iA-5Zk"/>
+                                                <constraint firstItem="oDM-HO-dGx" firstAttribute="leading" secondItem="Cr1-6G-ddS" secondAttribute="trailing" constant="8" id="ytj-9z-Znp"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="captionLabel" destination="oDM-HO-dGx" id="fdO-cs-PiM"/>
+                                            <outlet property="cardImageView" destination="Cr1-6G-ddS" id="EFJ-3P-bmK"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="atD-pz-0br" secondAttribute="trailing" id="39O-sS-pnt"/>
+                            <constraint firstItem="atD-pz-0br" firstAttribute="top" secondItem="jLc-7q-E5q" secondAttribute="top" id="7Gq-TR-c0W"/>
+                            <constraint firstItem="DBb-CR-gOF" firstAttribute="top" secondItem="atD-pz-0br" secondAttribute="bottom" id="YwB-gp-Y7B"/>
+                            <constraint firstItem="atD-pz-0br" firstAttribute="leading" secondItem="jLc-7q-E5q" secondAttribute="leading" id="dTI-UK-zhQ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="vwf-1o-8rO"/>
+                    <connections>
+                        <outlet property="tableView" destination="atD-pz-0br" id="bJW-lC-4lm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9lJ-YB-b5n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1081" y="331"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4rA-xk-J49">
@@ -97,8 +198,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="action_buttons" width="320" height="108"/>
-        <image name="ape" width="24" height="24"/>
+        <image name="dislike" width="100" height="100"/>
+        <image name="fav" width="24" height="24"/>
+        <image name="like" width="100" height="100"/>
+        <image name="redo" width="48" height="48"/>
         <image name="settings" width="24" height="24"/>
     </resources>
     <color key="tintColor" red="1" green="0.68075183996287891" blue="0.36352924475208004" alpha="1" colorSpace="calibratedRGB"/>

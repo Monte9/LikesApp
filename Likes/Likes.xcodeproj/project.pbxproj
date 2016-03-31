@@ -15,6 +15,8 @@
 		FADE1E801CAC513A0041EF9F /* DraggableImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FADE1E7F1CAC513A0041EF9F /* DraggableImageView.xib */; };
 		FADE1E821CAC515F0041EF9F /* DraggableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADE1E811CAC515F0041EF9F /* DraggableImageView.swift */; };
 		FADE1E841CAC84EF0041EF9F /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADE1E831CAC84EF0041EF9F /* Card.swift */; };
+		FADE1E861CAC91200041EF9F /* LikedCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADE1E851CAC91200041EF9F /* LikedCardsViewController.swift */; };
+		FADE1E881CAC91560041EF9F /* LikedCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADE1E871CAC91560041EF9F /* LikedCardTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		FADE1E7F1CAC513A0041EF9F /* DraggableImageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DraggableImageView.xib; sourceTree = "<group>"; };
 		FADE1E811CAC515F0041EF9F /* DraggableImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggableImageView.swift; sourceTree = "<group>"; };
 		FADE1E831CAC84EF0041EF9F /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		FADE1E851CAC91200041EF9F /* LikedCardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikedCardsViewController.swift; sourceTree = "<group>"; };
+		FADE1E871CAC91560041EF9F /* LikedCardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikedCardTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +67,10 @@
 				FADE1E671CABFEDD0041EF9F /* AppDelegate.swift */,
 				FADE1E791CAC40690041EF9F /* HomeViewController.swift */,
 				FADE1E831CAC84EF0041EF9F /* Card.swift */,
-				FADE1E7F1CAC513A0041EF9F /* DraggableImageView.xib */,
 				FADE1E811CAC515F0041EF9F /* DraggableImageView.swift */,
+				FADE1E7F1CAC513A0041EF9F /* DraggableImageView.xib */,
+				FADE1E871CAC91560041EF9F /* LikedCardTableViewCell.swift */,
+				FADE1E851CAC91200041EF9F /* LikedCardsViewController.swift */,
 				FADE1E6B1CABFEDD0041EF9F /* Main.storyboard */,
 				FADE1E6E1CABFEDD0041EF9F /* Assets.xcassets */,
 				FADE1E701CABFEDD0041EF9F /* LaunchScreen.storyboard */,
@@ -149,6 +155,8 @@
 				FADE1E821CAC515F0041EF9F /* DraggableImageView.swift in Sources */,
 				FADE1E7A1CAC40690041EF9F /* HomeViewController.swift in Sources */,
 				FADE1E841CAC84EF0041EF9F /* Card.swift in Sources */,
+				FADE1E861CAC91200041EF9F /* LikedCardsViewController.swift in Sources */,
+				FADE1E881CAC91560041EF9F /* LikedCardTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -17,7 +17,16 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var cardsView: DraggableImageView!
     
+    @IBOutlet weak var likeButton: UIButton!
+    
+    @IBOutlet weak var dislikeButton: UIButton!
+    
+    @IBOutlet weak var redoButton: UIButton!
+    
     var cards: [Card] = []
+    
+    var likedCards: [Card] = []
+    var dislikedCards: [Card] = []
     
     let dict = ["ImageName" : "bernie", "Caption": "Do you #FeelTheBern?"]
     let dict2 = ["ImageName" : "mars", "Caption": "Do you want to live on Mars?"]
@@ -55,21 +64,25 @@ class HomeViewController: UIViewController {
     func showNewUser() {
         
         if cardsView.currentCard?.liked == true && i < 4  {
+            likedCards.append(cardsView.currentCard!)
             cardsView.setCard(cards[i])
             cardsView.numberYes = cardsView.numberYes + 1
         } else if i < 4 {
+            dislikedCards.append(cardsView.currentCard!)
             cardsView.setCard(cards[i])
             cardsView.numberNo = cardsView.numberNo + 1
         } else if i == 4 {
             if cardsView.currentCard?.liked == true {
+                i = 0
+                likedCards.append(cardsView.currentCard!)
+                cardsView.setCard(cards[i])
                 cardsView.numberYes = cardsView.numberYes + 1
             } else {
+                i = 0
+                dislikedCards.append(cardsView.currentCard!)
+                cardsView.setCard(cards[i])
                 cardsView.numberNo = cardsView.numberNo + 1
             }
-            resultsLabel.text = "Yes: \(cardsView.numberYes) | No: \(cardsView.numberNo)"
-            resultsLabel.hidden = false
-            cardsView.hidden = true
-            i = -1
         }
         i += 1
     }
@@ -86,16 +99,39 @@ class HomeViewController: UIViewController {
         cardsView.numberYes = 0
         cardsView.numberNo = 0
     }
-
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    @IBAction func cardLiked(sender: AnyObject) {
+        if i < 4 {
+            likedCards.append(cardsView.currentCard!)
+            cardsView.setCard(cards[i])
+            cardsView.numberYes = cardsView.numberYes + 1
+        } else if i == 4 {
+            i = 0
+            likedCards.append(cardsView.currentCard!)
+            cardsView.setCard(cards[i])
+            cardsView.numberYes = cardsView.numberYes + 1
+        }
+        i += 1
     }
-    */
 
+    @IBAction func cardDisliked(sender: AnyObject) {
+        if i < 4 {
+            dislikedCards.append(cardsView.currentCard!)
+            cardsView.setCard(cards[i])
+            cardsView.numberNo = cardsView.numberNo + 1
+        } else if i == 4 {
+            i = 0
+            dislikedCards.append(cardsView.currentCard!)
+            cardsView.setCard(cards[i])
+            cardsView.numberNo = cardsView.numberNo + 1
+        }
+        i += 1
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let likedCardsController = segue.destinationViewController as! LikedCardsViewController
+        likedCardsController.likedCards = self.likedCards
+    }
+    
 }
