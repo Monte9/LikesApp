@@ -20,6 +20,10 @@
 		FADE1E881CAC91560041EF9F /* LikedCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADE1E871CAC91560041EF9F /* LikedCardTableViewCell.swift */; };
 		FADE1E8A1CADB0640041EF9F /* DEMORootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADE1E891CADB0640041EF9F /* DEMORootViewController.swift */; };
 		FADE1E8E1CADBD700041EF9F /* NewLeftMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADE1E8D1CADBD700041EF9F /* NewLeftMenuViewController.swift */; };
+		FADE1E941CAE6C680041EF9F /* S3V4Signer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADE1E931CAE6C680041EF9F /* S3V4Signer.swift */; };
+		FADE1E981CAE712F0041EF9F /* OSHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADE1E971CAE712F0041EF9F /* OSHash.swift */; };
+		FADE1EA01CAEE0760041EF9F /* RWMAmazonProductAdvertisingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FADE1E9D1CAEE0760041EF9F /* RWMAmazonProductAdvertisingManager.m */; };
+		FADE1EA11CAEE0760041EF9F /* RWMAmazonProductAdvertisingRequestSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = FADE1E9F1CAEE0760041EF9F /* RWMAmazonProductAdvertisingRequestSerializer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +44,13 @@
 		FADE1E871CAC91560041EF9F /* LikedCardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikedCardTableViewCell.swift; sourceTree = "<group>"; };
 		FADE1E891CADB0640041EF9F /* DEMORootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DEMORootViewController.swift; sourceTree = "<group>"; };
 		FADE1E8D1CADBD700041EF9F /* NewLeftMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewLeftMenuViewController.swift; sourceTree = "<group>"; };
+		FADE1E931CAE6C680041EF9F /* S3V4Signer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = S3V4Signer.swift; sourceTree = "<group>"; };
+		FADE1E961CAE6E180041EF9F /* Likes-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Likes-Bridging-Header.h"; sourceTree = "<group>"; };
+		FADE1E971CAE712F0041EF9F /* OSHash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSHash.swift; sourceTree = "<group>"; };
+		FADE1E9C1CAEE0760041EF9F /* RWMAmazonProductAdvertisingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWMAmazonProductAdvertisingManager.h; sourceTree = "<group>"; };
+		FADE1E9D1CAEE0760041EF9F /* RWMAmazonProductAdvertisingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWMAmazonProductAdvertisingManager.m; sourceTree = "<group>"; };
+		FADE1E9E1CAEE0760041EF9F /* RWMAmazonProductAdvertisingRequestSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWMAmazonProductAdvertisingRequestSerializer.h; sourceTree = "<group>"; };
+		FADE1E9F1CAEE0760041EF9F /* RWMAmazonProductAdvertisingRequestSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWMAmazonProductAdvertisingRequestSerializer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +103,8 @@
 		FADE1E661CABFEDD0041EF9F /* Likes */ = {
 			isa = PBXGroup;
 			children = (
+				FADE1E9B1CAEE06C0041EF9F /* RWMAmazonProductAdvertisingManager */,
+				FADE1E961CAE6E180041EF9F /* Likes-Bridging-Header.h */,
 				FADE1E671CABFEDD0041EF9F /* AppDelegate.swift */,
 				FADE1E921CAE43D20041EF9F /* API */,
 				FADE1E911CADDAF50041EF9F /* Views */,
@@ -137,8 +150,21 @@
 		FADE1E921CAE43D20041EF9F /* API */ = {
 			isa = PBXGroup;
 			children = (
+				FADE1E931CAE6C680041EF9F /* S3V4Signer.swift */,
+				FADE1E971CAE712F0041EF9F /* OSHash.swift */,
 			);
 			name = API;
+			sourceTree = "<group>";
+		};
+		FADE1E9B1CAEE06C0041EF9F /* RWMAmazonProductAdvertisingManager */ = {
+			isa = PBXGroup;
+			children = (
+				FADE1E9C1CAEE0760041EF9F /* RWMAmazonProductAdvertisingManager.h */,
+				FADE1E9D1CAEE0760041EF9F /* RWMAmazonProductAdvertisingManager.m */,
+				FADE1E9E1CAEE0760041EF9F /* RWMAmazonProductAdvertisingRequestSerializer.h */,
+				FADE1E9F1CAEE0760041EF9F /* RWMAmazonProductAdvertisingRequestSerializer.m */,
+			);
+			name = RWMAmazonProductAdvertisingManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,13 +291,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				FADE1E681CABFEDD0041EF9F /* AppDelegate.swift in Sources */,
+				FADE1EA11CAEE0760041EF9F /* RWMAmazonProductAdvertisingRequestSerializer.m in Sources */,
 				FADE1E8A1CADB0640041EF9F /* DEMORootViewController.swift in Sources */,
 				FADE1E821CAC515F0041EF9F /* DraggableImageView.swift in Sources */,
+				FADE1E981CAE712F0041EF9F /* OSHash.swift in Sources */,
+				FADE1E941CAE6C680041EF9F /* S3V4Signer.swift in Sources */,
 				FADE1E7A1CAC40690041EF9F /* HomeViewController.swift in Sources */,
 				FADE1E841CAC84EF0041EF9F /* Card.swift in Sources */,
 				FADE1E861CAC91200041EF9F /* LikedCardsViewController.swift in Sources */,
 				FADE1E881CAC91560041EF9F /* LikedCardTableViewCell.swift in Sources */,
 				FADE1E8E1CADBD700041EF9F /* NewLeftMenuViewController.swift in Sources */,
+				FADE1EA01CAEE0760041EF9F /* RWMAmazonProductAdvertisingManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +419,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.montethakkar.Likes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Likes/Likes-Bridging-Header.h";
+				USER_HEADER_SEARCH_PATHS = "${PROJECT_DIR}/lib";
 			};
 			name = Debug;
 		};
@@ -401,6 +433,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.montethakkar.Likes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Likes/Likes-Bridging-Header.h";
+				USER_HEADER_SEARCH_PATHS = "${PROJECT_DIR}/lib";
 			};
 			name = Release;
 		};

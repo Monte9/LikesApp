@@ -4,7 +4,17 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>AFNetworking.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Alamofire.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>NSHash.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -37,22 +47,32 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>70AB3EB4D396AFD767AE2F12A1464A13</key>
+		<key>965E4C0C4458C4C622A61D4828C167D9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A283FCA824A338B1DA532867E3E7E9A1</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>A428B7279D55F8CA0C1D247C7F206E71</key>
+		<key>C91A46012F8822DFDBAC8BC32FCC9001</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>E181BAB7DD5EA52AB518DFD835264D41</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E277F8E8BE1760C953A6FCBF50374C8A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E2E98B9CD754B4954C3FBD110D724837</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E4F9DB01591FF31CF90B9F53BF3A9BFC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
