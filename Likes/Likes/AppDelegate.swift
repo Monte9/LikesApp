@@ -9,6 +9,12 @@
 import UIKit
 import RESideMenu
 
+//Amazon API
+//Access Key ID: AKIAJITU3IRXRV4C2NHA
+//Secret Access Key: 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
+//Associates program PIN: 3342
+//unique Associates ID is like05a-20
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 

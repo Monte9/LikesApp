@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '450A4DFA0894CE53C2012255'
-               BlueprintName = 'Pods-Likes'
+               BlueprintIdentifier = '397702DEAE04DBC99CA549B3'
+               BlueprintName = 'Ono'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'Pods_Likes.framework'>
+               BuildableName = 'Ono.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

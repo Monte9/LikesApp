@@ -1,12 +1,18 @@
 PODS:
+  - Alamofire (3.1.5)
+  - Ono (1.2.2)
   - RESideMenu (4.0.7)
   - UIColor_Hex_Swift (2.1)
 
 DEPENDENCIES:
+  - Alamofire (~> 3.1.2)
+  - Ono
   - RESideMenu (~> 4.0.7)
   - UIColor_Hex_Swift (~> 2.1)
 
 SPEC CHECKSUMS:
+  Alamofire: 5f730ba29fd113b7ddd71c1e65d0c630acf5d7b0
+  Ono: 80b1c686777d3f6d5d5ce6fcac8a74afef4ca197
   RESideMenu: f24c508404b49c667344c54aba7e590883533958
   UIColor_Hex_Swift: e91dc51f6bf252ec7bf74c8704ceedeeb7640c1c
 

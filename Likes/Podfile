@@ -9,5 +9,9 @@ pod 'RESideMenu', '~> 4.0.7'
 
 pod 'UIColor_Hex_Swift', '~> 2.1'
 
+pod 'Alamofire', '~> 3.1.2'
+
+pod 'Ono'
+
 end
 
