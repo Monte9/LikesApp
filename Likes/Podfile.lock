@@ -21,24 +21,26 @@ PODS:
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - Alamofire (3.1.5)
-  - NSHash (1.1.0)
-  - Ono (1.2.2)
+  - BDBOAuth1Manager (1.5.0):
+    - AFNetworking/NSURLConnection (~> 2.5.0)
+    - AFNetworking/NSURLSession (~> 2.5.0)
+  - MBProgressHUD (0.9.2)
   - RESideMenu (4.0.7)
   - UIColor_Hex_Swift (2.1)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.5.4)
   - Alamofire (~> 3.1.2)
-  - NSHash (~> 1.1.0)
-  - Ono
+  - BDBOAuth1Manager
+  - MBProgressHUD
   - RESideMenu (~> 4.0.7)
   - UIColor_Hex_Swift (~> 2.1)
 
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
   Alamofire: 5f730ba29fd113b7ddd71c1e65d0c630acf5d7b0
-  NSHash: 61d598c6d48957c5557f1eef0aeafd6ef5ec5fb7
-  Ono: 80b1c686777d3f6d5d5ce6fcac8a74afef4ca197
+  BDBOAuth1Manager: 2e28773b58f880fb36b5cd3efcf0b1fefbc78a99
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
   RESideMenu: f24c508404b49c667344c54aba7e590883533958
   UIColor_Hex_Swift: e91dc51f6bf252ec7bf74c8704ceedeeb7640c1c
 

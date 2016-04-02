@@ -17,17 +17,15 @@
             <rect key="frame" x="0.0" y="0.0" width="304" height="345"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bPj-FL-aLt">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bPj-FL-aLt">
                     <rect key="frame" x="0.0" y="0.0" width="304" height="304"/>
                     <gestureRecognizers/>
                     <constraints>
-                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="304" id="Epr-7v-R1N"/>
                         <constraint firstAttribute="width" constant="304" id="iUq-6q-b1U"/>
-                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="304" id="s8C-JJ-UcY"/>
                         <constraint firstAttribute="height" constant="304" id="uUE-ub-BLy"/>
                     </constraints>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" text="About" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ISR-Fg-daC">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ISR-Fg-daC">
                     <rect key="frame" x="8" y="312" width="288" height="24"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="288" id="evu-0d-PBa"/>
@@ -40,9 +38,9 @@
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="ISR-Fg-daC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="1Pc-bI-FyD"/>
+                <constraint firstItem="bPj-FL-aLt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="3FI-Y9-ydH"/>
                 <constraint firstItem="ISR-Fg-daC" firstAttribute="top" secondItem="bPj-FL-aLt" secondAttribute="bottom" constant="8" id="AxH-bH-tYM"/>
-                <constraint firstItem="bPj-FL-aLt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="afZ-je-jea"/>
-                <constraint firstItem="bPj-FL-aLt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="gQw-Ea-p13"/>
+                <constraint firstItem="bPj-FL-aLt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="tIr-ZU-hOK"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="237" y="157.5"/>

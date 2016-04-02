@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		12AB26D30CB60B836B6654BC /* Pods_Likes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E72EBAF78DCEE1E6DCE64359 /* Pods_Likes.framework */; };
+		FA95DF971CAF3897007EF934 /* YelpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA95DF961CAF3897007EF934 /* YelpClient.swift */; };
+		FA95DF991CAF6899007EF934 /* AmazonAPICode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA95DF981CAF6899007EF934 /* AmazonAPICode.swift */; };
 		FADE1E681CABFEDD0041EF9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADE1E671CABFEDD0041EF9F /* AppDelegate.swift */; };
 		FADE1E6D1CABFEDD0041EF9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADE1E6B1CABFEDD0041EF9F /* Main.storyboard */; };
 		FADE1E6F1CABFEDD0041EF9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADE1E6E1CABFEDD0041EF9F /* Assets.xcassets */; };
@@ -30,6 +32,8 @@
 		156870A5B38E7115899547A9 /* Pods-Likes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Likes.release.xcconfig"; path = "Pods/Target Support Files/Pods-Likes/Pods-Likes.release.xcconfig"; sourceTree = "<group>"; };
 		E72EBAF78DCEE1E6DCE64359 /* Pods_Likes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Likes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E804E599A4C7D197B8DBFF02 /* Pods-Likes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Likes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Likes/Pods-Likes.debug.xcconfig"; sourceTree = "<group>"; };
+		FA95DF961CAF3897007EF934 /* YelpClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YelpClient.swift; sourceTree = "<group>"; };
+		FA95DF981CAF6899007EF934 /* AmazonAPICode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AmazonAPICode.swift; path = Likes/AmazonAPICode.swift; sourceTree = "<group>"; };
 		FADE1E641CABFEDD0041EF9F /* Likes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Likes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FADE1E671CABFEDD0041EF9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FADE1E6C1CABFEDD0041EF9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -44,9 +48,9 @@
 		FADE1E871CAC91560041EF9F /* LikedCardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikedCardTableViewCell.swift; sourceTree = "<group>"; };
 		FADE1E891CADB0640041EF9F /* DEMORootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DEMORootViewController.swift; sourceTree = "<group>"; };
 		FADE1E8D1CADBD700041EF9F /* NewLeftMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewLeftMenuViewController.swift; sourceTree = "<group>"; };
-		FADE1E931CAE6C680041EF9F /* S3V4Signer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = S3V4Signer.swift; sourceTree = "<group>"; };
+		FADE1E931CAE6C680041EF9F /* S3V4Signer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = S3V4Signer.swift; path = Likes/S3V4Signer.swift; sourceTree = "<group>"; };
 		FADE1E961CAE6E180041EF9F /* Likes-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Likes-Bridging-Header.h"; sourceTree = "<group>"; };
-		FADE1E971CAE712F0041EF9F /* OSHash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSHash.swift; sourceTree = "<group>"; };
+		FADE1E971CAE712F0041EF9F /* OSHash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OSHash.swift; path = Likes/OSHash.swift; sourceTree = "<group>"; };
 		FADE1E9C1CAEE0760041EF9F /* RWMAmazonProductAdvertisingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWMAmazonProductAdvertisingManager.h; sourceTree = "<group>"; };
 		FADE1E9D1CAEE0760041EF9F /* RWMAmazonProductAdvertisingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWMAmazonProductAdvertisingManager.m; sourceTree = "<group>"; };
 		FADE1E9E1CAEE0760041EF9F /* RWMAmazonProductAdvertisingRequestSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWMAmazonProductAdvertisingRequestSerializer.h; sourceTree = "<group>"; };
@@ -68,6 +72,10 @@
 		1F1136904BF0BA2357AF3F0F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FADE1E931CAE6C680041EF9F /* S3V4Signer.swift */,
+				FADE1E971CAE712F0041EF9F /* OSHash.swift */,
+				FA95DF981CAF6899007EF934 /* AmazonAPICode.swift */,
+				FADE1E9B1CAEE06C0041EF9F /* RWMAmazonProductAdvertisingManager */,
 				E72EBAF78DCEE1E6DCE64359 /* Pods_Likes.framework */,
 			);
 			name = Frameworks;
@@ -103,8 +111,6 @@
 		FADE1E661CABFEDD0041EF9F /* Likes */ = {
 			isa = PBXGroup;
 			children = (
-				FADE1E9B1CAEE06C0041EF9F /* RWMAmazonProductAdvertisingManager */,
-				FADE1E961CAE6E180041EF9F /* Likes-Bridging-Header.h */,
 				FADE1E671CABFEDD0041EF9F /* AppDelegate.swift */,
 				FADE1E921CAE43D20041EF9F /* API */,
 				FADE1E911CADDAF50041EF9F /* Views */,
@@ -114,6 +120,7 @@
 				FADE1E6E1CABFEDD0041EF9F /* Assets.xcassets */,
 				FADE1E701CABFEDD0041EF9F /* LaunchScreen.storyboard */,
 				FADE1E731CABFEDD0041EF9F /* Info.plist */,
+				FADE1E961CAE6E180041EF9F /* Likes-Bridging-Header.h */,
 			);
 			path = Likes;
 			sourceTree = "<group>";
@@ -150,8 +157,7 @@
 		FADE1E921CAE43D20041EF9F /* API */ = {
 			isa = PBXGroup;
 			children = (
-				FADE1E931CAE6C680041EF9F /* S3V4Signer.swift */,
-				FADE1E971CAE712F0041EF9F /* OSHash.swift */,
+				FA95DF961CAF3897007EF934 /* YelpClient.swift */,
 			);
 			name = API;
 			sourceTree = "<group>";
@@ -165,6 +171,7 @@
 				FADE1E9F1CAEE0760041EF9F /* RWMAmazonProductAdvertisingRequestSerializer.m */,
 			);
 			name = RWMAmazonProductAdvertisingManager;
+			path = Likes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,6 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FADE1E681CABFEDD0041EF9F /* AppDelegate.swift in Sources */,
+				FA95DF991CAF6899007EF934 /* AmazonAPICode.swift in Sources */,
 				FADE1EA11CAEE0760041EF9F /* RWMAmazonProductAdvertisingRequestSerializer.m in Sources */,
 				FADE1E8A1CADB0640041EF9F /* DEMORootViewController.swift in Sources */,
 				FADE1E821CAC515F0041EF9F /* DraggableImageView.swift in Sources */,
@@ -302,6 +310,7 @@
 				FADE1E881CAC91560041EF9F /* LikedCardTableViewCell.swift in Sources */,
 				FADE1E8E1CADBD700041EF9F /* NewLeftMenuViewController.swift in Sources */,
 				FADE1EA01CAEE0760041EF9F /* RWMAmazonProductAdvertisingManager.m in Sources */,
+				FA95DF971CAF3897007EF934 /* YelpClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

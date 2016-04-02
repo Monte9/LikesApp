@@ -24,7 +24,8 @@ class LikedCardTableViewCell: UITableViewCell {
     
     func setCardInfo(card: Card?) {
         self.card = card
-        cardImageView.image = UIImage(named: (card?.imageName)!)
+        //cardImageView.image = UIImage(named: (card?.imageName)!)
+        cardImageView.setImageWithURL(card?.imageURL)
         captionLabel.text = card?.caption
     }
 

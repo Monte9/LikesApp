@@ -14,12 +14,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>NSHash.xcscheme</key>
+		<key>BDBOAuth1Manager.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Ono.xcscheme</key>
+		<key>MBProgressHUD.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -47,7 +47,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>965E4C0C4458C4C622A61D4828C167D9</key>
+		<key>91253EE1B7DD60A0C5A3691625A833BC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>ACEC05BAC1347BA318966F45752D3782</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AE6A4AC269D91F7FF73F67FEEEF0FC11</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C2331C58529F331878B364098E6CF21C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -57,22 +72,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E181BAB7DD5EA52AB518DFD835264D41</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E277F8E8BE1760C953A6FCBF50374C8A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E2E98B9CD754B4954C3FBD110D724837</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E4F9DB01591FF31CF90B9F53BF3A9BFC</key>
+		<key>E61CE3B6DFA1FE6B3E296965C76C0E10</key>
 		<dict>
 			<key>primary</key>
 			<true/>

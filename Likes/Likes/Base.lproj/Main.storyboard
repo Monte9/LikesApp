@@ -55,12 +55,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RESULTS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ymW-fq-eyV">
-                                <rect key="frame" x="16" y="269" width="288" height="30"/>
-                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="25"/>
-                                <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="db5-AQ-bFg" customClass="DraggableImageView" customModule="Likes" customModuleProvider="target">
                                 <rect key="frame" x="8" y="72" width="304" height="356"/>
                                 <gestureRecognizers/>
@@ -90,6 +84,9 @@
                                     <constraint firstAttribute="height" constant="60" id="nm7-m9-w23"/>
                                 </constraints>
                                 <state key="normal" image="redo"/>
+                                <connections>
+                                    <action selector="goGoGorilla:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BkK-aj-baI"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="owK-VM-e2Y">
                                 <rect key="frame" x="20" y="460" width="100" height="100"/>
@@ -106,14 +103,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="db5-AQ-bFg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1f2-lo-C8p"/>
-                            <constraint firstItem="ymW-fq-eyV" firstAttribute="top" secondItem="3Bg-KW-IgN" secondAttribute="bottom" constant="205" id="8al-hj-JmF"/>
-                            <constraint firstItem="ymW-fq-eyV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8ao-2n-hlJ"/>
-                            <constraint firstItem="ymW-fq-eyV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="FKj-dZ-aEM"/>
                             <constraint firstItem="xdb-LW-IGl" firstAttribute="centerY" secondItem="owK-VM-e2Y" secondAttribute="centerY" constant="-12" id="O9F-Q6-zU8"/>
                             <constraint firstItem="xdb-LW-IGl" firstAttribute="leading" secondItem="owK-VM-e2Y" secondAttribute="trailing" constant="10" id="P1N-9U-4jp"/>
                             <constraint firstItem="ipF-Qw-9ll" firstAttribute="top" secondItem="db5-AQ-bFg" secondAttribute="bottom" constant="8" id="QdJ-op-bOQ"/>
                             <constraint firstItem="owK-VM-e2Y" firstAttribute="top" secondItem="db5-AQ-bFg" secondAttribute="bottom" constant="32" id="Wcy-2r-y3o"/>
-                            <constraint firstAttribute="trailing" secondItem="ymW-fq-eyV" secondAttribute="trailing" constant="16" id="dXW-TE-n3e"/>
                             <constraint firstItem="xdb-LW-IGl" firstAttribute="top" secondItem="db5-AQ-bFg" secondAttribute="bottom" constant="40" id="eCi-Og-Cr6"/>
                             <constraint firstItem="ipF-Qw-9ll" firstAttribute="leading" secondItem="xdb-LW-IGl" secondAttribute="trailing" constant="14" id="gD3-kB-4A1"/>
                             <constraint firstItem="ipF-Qw-9ll" firstAttribute="centerY" secondItem="owK-VM-e2Y" secondAttribute="centerY" constant="-24" id="hVz-Df-d6N"/>
@@ -137,7 +130,6 @@
                         <outlet property="cardsView" destination="db5-AQ-bFg" id="cZY-VK-hYE"/>
                         <outlet property="dislikeButton" destination="owK-VM-e2Y" id="Gac-Yg-Dg8"/>
                         <outlet property="likeButton" destination="ipF-Qw-9ll" id="501-zU-22F"/>
-                        <outlet property="resultsLabel" destination="ymW-fq-eyV" id="Xuw-vn-RXz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -242,7 +234,7 @@
         <image name="dislike" width="100" height="100"/>
         <image name="fav" width="24" height="24"/>
         <image name="like" width="100" height="100"/>
-        <image name="redo" width="48" height="48"/>
+        <image name="redo" width="50" height="50"/>
         <image name="settings" width="24" height="24"/>
     </resources>
     <color key="tintColor" red="1" green="0.68235294117647061" blue="0.36470588235294116" alpha="1" colorSpace="calibratedRGB"/>

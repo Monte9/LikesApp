@@ -68,7 +68,12 @@ class DraggableImageView: UIView {
     
     func setCard(card: Card?) {
         currentCard = card
-        profileImageView.image = UIImage(named: (card?.imageName)!)
+        profileImageView.setImageWithURL(card?.imageURL)
+        
+        if card?.imageName != nil {
+            profileImageView.image = UIImage(named: (card?.imageName)!)
+        }
+        
         aboutLabel.text = card?.caption
     }
     

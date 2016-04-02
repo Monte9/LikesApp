@@ -15,8 +15,8 @@ class NewLeftMenuViewController: UIViewController, UITableViewDelegate, UITableV
     var tableView: UITableView = UITableView()
     var cell: UITableViewCell?
     
-    var items = ["Home", "Share the App", "Send me Feedback", "Rate the App"]
-    var images = ["home", "share", "feedback", "rate"]
+    var items = ["Home", "Share the App", "Send Feedback", "Rate the App","Home", "Share the App", "Send Feedback", "Rate the App"]
+    var images = ["home", "share", "feedback", "rate","home", "share", "feedback", "rate"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,20 +32,13 @@ class NewLeftMenuViewController: UIViewController, UITableViewDelegate, UITableV
         tableView.separatorStyle = UITableViewCellSeparatorStyle.None
         tableView.bounces = false
         tableView.scrollsToTop = false
+        tableView.autoresizingMask = UIViewAutoresizing.FlexibleTopMargin
         
         tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "MenuCell")
         
         self.view.addSubview(tableView)
-        
-        
-        
-        //
-//        tableView.autoresizingMask = UIViewAutoresizing.FlexibleTopMargin
-//            //|| UIViewAutoresizing.FlexibleBottomMargin || UIViewAutoresizing.FlexibleWidth
-//        
-        
-     
 
+        //|| UIViewAutoresizing.FlexibleBottomMargin || UIViewAutoresizing.FlexibleWidth
     }
 
     override func didReceiveMemoryWarning() {
