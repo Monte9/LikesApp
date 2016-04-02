@@ -2,7 +2,7 @@
 
 **Likes** app is an iOS app that provides a uniform and simple UI for interacting with several websites and services.
 
-Time spent: **3** hours spent in total
+Time spent: **20** hours spent in total
 
 ## User Stories
 
@@ -15,6 +15,8 @@ The following features are implemented:
 
 ## Video Walkthrough 
 
+![Likes+Yelp iOS app walkthrough](likes_yelp.gif)
+
 ![Likes iOS app walkthrough](likes.gif)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
@@ -22,14 +24,22 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 ## 3rd Party Libraries
 
 1. [UIColor-Hex-Swift](https://github.com/yeahdongcn/UIColor-Hex-Swift): Convenience methods for creating color using RGBA hex string.
+
     `pod 'UIColor_Hex_Swift', '~> 2.1'`
 
 2. [RESideMenu](https://github.com/romaonthego/RESideMenu): iOS 7/8 style side menu with parallax effect.
+
     `pod 'RESideMenu', '~> 4.0.7'`
 
 ## Notes
 
-Simple. Intiutive. Fun. #likesApp
+Simple. Intiutive. Fun. #LikesApp
+
+## Challenges
+
+Working with Amazon API on iOS is impossible. 
+1. Need to sign each request with a secret key
+2. Lack of relevant resources
 
 ## License
 
